@@ -19,7 +19,7 @@ typedef struct {
 
 int check_size(char[30]);
 int file_write(cyclist*, int, char[30]);
-int file_read(cyclist*, char[30], int);
+int file_read(cyclist*, char[30]);
 void arr_print_data(cyclist*, int,int);
 void arr_print_results(cyclist*, int, int);
 cyclist* arr_calc_res(cyclist*, int);
@@ -158,7 +158,7 @@ int check_size(char fname[30])
     return size;
 }
 
-int file_read(cyclist* array, char fname[30], int size)
+int file_read(cyclist* array, char fname[30])
 {
     system("cls");
     FILE* S2 = fopen(fname, "rt");
@@ -167,7 +167,6 @@ int file_read(cyclist* array, char fname[30], int size)
         exit(0);
     }
     int i = 0;
-    int k = 0;
     fseek(S2, 0, SEEK_SET);
     while (!feof(S2)) {
         fscanf(S2, "|%5d|", &(array + i)->number);
