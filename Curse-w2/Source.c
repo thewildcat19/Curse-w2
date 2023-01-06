@@ -282,7 +282,7 @@ int arr_change(cyclist* a, int size, int pl_numb, int pl_st, int pl_val)
 int add_el(cyclist* a, int size, int nmb, char nm[20]) {
     strncpy(a[size - 1].name, nm, 20);
     (a + (size - 1))->number = nmb;
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < 5; i++) {
         a[size - 1].stages[i] = 0;
     }
     a[size - 1].penalty = 0;
