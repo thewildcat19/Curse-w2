@@ -37,10 +37,10 @@ int main() {
     int size;
     char  extension[6] = { ".txt" };
     char file_name[30];
-    puts("Введите название файла в пределах 30 символов (без указания расширения файла)");
+    puts("Г‚ГўГҐГ¤ГЁГІГҐ Г­Г Г§ГўГ Г­ГЁГҐ ГґГ Г©Г«Г  Гў ГЇГ°ГҐГ¤ГҐГ«Г Гµ 30 Г±ГЁГ¬ГўГ®Г«Г®Гў (ГЎГҐГ§ ГіГЄГ Г§Г Г­ГЁГї Г°Г Г±ГёГЁГ°ГҐГ­ГЁГї ГґГ Г©Г«Г )");
     scanf("%s", file_name);
     strcat(file_name, extension);
-    printf("Имя файла: %s\n", file_name);
+    printf("Г€Г¬Гї ГґГ Г©Г«Г : %s\n", file_name);
   
     size = check_size(file_name);
     cyclist* array = (cyclist*)malloc(size * sizeof(cyclist));
@@ -49,16 +49,16 @@ int main() {
     int  choice = 1;
 
     while (choice != 9) {
-        printf("Программа оценки соревнований по велоспорту\n"
-            "Для вывода исходной таблицы нажмите - 1\n"
-            "Для вывода отсортированного по среднему значению списка нажмите - 2\n"
-            "Для вывода результирующей таблицы, содержащей очки и места нажмите - 3\n"
-            "Для поиска спортсмена по штрафным очкам в диапазоне нажмите - 4\n"
-            "Для изменения значений этапа игрока нажмите - 5\n"
-            "Для записи значений в файл нажмите - 6\n"
-            "Для добавления элемента нажмите - 7\n"
-            "Для удаления элемента нажмите - 8\n"
-            "Для выхода из программы нажмите - 9\n"
+        printf("ГЏГ°Г®ГЈГ°Г Г¬Г¬Г  Г®Г¶ГҐГ­ГЄГЁ Г±Г®Г°ГҐГўГ­Г®ГўГ Г­ГЁГ© ГЇГ® ГўГҐГ«Г®Г±ГЇГ®Г°ГІГі\n"
+            "Г„Г«Гї ГўГ»ГўГ®Г¤Г  ГЁГ±ГµГ®Г¤Г­Г®Г© ГІГ ГЎГ«ГЁГ¶Г» Г­Г Г¦Г¬ГЁГІГҐ - 1\n"
+            "Г„Г«Гї ГўГ»ГўГ®Г¤Г  Г®ГІГ±Г®Г°ГІГЁГ°Г®ГўГ Г­Г­Г®ГЈГ® ГЇГ® Г±Г°ГҐГ¤Г­ГҐГ¬Гі Г§Г­Г Г·ГҐГ­ГЁГѕ Г±ГЇГЁГ±ГЄГ  Г­Г Г¦Г¬ГЁГІГҐ - 2\n"
+            "Г„Г«Гї ГўГ»ГўГ®Г¤Г  Г°ГҐГ§ГіГ«ГјГІГЁГ°ГіГѕГ№ГҐГ© ГІГ ГЎГ«ГЁГ¶Г», Г±Г®Г¤ГҐГ°Г¦Г Г№ГҐГ© Г®Г·ГЄГЁ ГЁ Г¬ГҐГ±ГІГ  Г­Г Г¦Г¬ГЁГІГҐ - 3\n"
+            "Г„Г«Гї ГЇГ®ГЁГ±ГЄГ  Г±ГЇГ®Г°ГІГ±Г¬ГҐГ­Г  ГЇГ® ГёГІГ°Г ГґГ­Г»Г¬ Г®Г·ГЄГ Г¬ Гў Г¤ГЁГ ГЇГ Г§Г®Г­ГҐ Г­Г Г¦Г¬ГЁГІГҐ - 4\n"
+            "Г„Г«Гї ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГї Г§Г­Г Г·ГҐГ­ГЁГ© ГЅГІГ ГЇГ  ГЁГЈГ°Г®ГЄГ  Г­Г Г¦Г¬ГЁГІГҐ - 5\n"
+            "Г„Г«Гї Г§Г ГЇГЁГ±ГЁ Г§Г­Г Г·ГҐГ­ГЁГ© Гў ГґГ Г©Г« Г­Г Г¦Г¬ГЁГІГҐ - 6\n"
+            "Г„Г«Гї Г¤Г®ГЎГ ГўГ«ГҐГ­ГЁГї ГЅГ«ГҐГ¬ГҐГ­ГІГ  Г­Г Г¦Г¬ГЁГІГҐ - 7\n"
+            "Г„Г«Гї ГіГ¤Г Г«ГҐГ­ГЁГї ГЅГ«ГҐГ¬ГҐГ­ГІГ  Г­Г Г¦Г¬ГЁГІГҐ - 8\n"
+            "Г„Г«Гї ГўГ»ГµГ®Г¤Г  ГЁГ§ ГЇГ°Г®ГЈГ°Г Г¬Г¬Г» Г­Г Г¦Г¬ГЁГІГҐ - 9\n"
         );
         scanf_s("\n%c", &inp);
         
@@ -81,29 +81,29 @@ int main() {
                 break;
             case 4:
                 system("cls");
-                printf("Введите значения нижнего и верхнего пределов диапазона:");
+                printf("Г‚ГўГҐГ¤ГЁГІГҐ Г§Г­Г Г·ГҐГ­ГЁГї Г­ГЁГ¦Г­ГҐГЈГ® ГЁ ГўГҐГ°ГµГ­ГҐГЈГ® ГЇГ°ГҐГ¤ГҐГ«Г®Гў Г¤ГЁГ ГЇГ Г§Г®Г­Г :");
                 int ub = 0, lb = 0;
                 int sz = 0;
                 scanf("%d", &lb);
                 scanf("%d", &ub);
                 arr_print_results(arr_search(array, size, lb, ub, &sz), sz, 1);
-                printf("Показано %d записей\n", sz);
+                printf("ГЏГ®ГЄГ Г§Г Г­Г® %d Г§Г ГЇГЁГ±ГҐГ©\n", sz);
                 break;
             case 5:
                 system("cls");
-                printf("Напишите номер игрока , этапа(для штрафных очков введите - 6) и новое значение:");
+                printf("ГЌГ ГЇГЁГёГЁГІГҐ Г­Г®Г¬ГҐГ° ГЁГЈГ°Г®ГЄГ  , ГЅГІГ ГЇГ (Г¤Г«Гї ГёГІГ°Г ГґГ­Г»Гµ Г®Г·ГЄГ®Гў ГўГўГҐГ¤ГЁГІГҐ - 6) ГЁ Г­Г®ГўГ®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ:");
                 int pl_numb, pl_st, pl_val, result;
                 scanf("%d %d %d", &pl_numb, &pl_st, &pl_val);
-                (pl_numb > 0 && pl_st > 0 && pl_st < 6 && pl_val>0) ? (arr_change(array, size, pl_numb, pl_st, pl_val) == 1 ? printf("Изменение выполнено успешно!\n") : printf("Значение не найдено!\n")) : printf("Неверный ввод!");
+                (pl_numb > 0 && pl_st > 0 && pl_st < 6 && pl_val>0) ? (arr_change(array, size, pl_numb, pl_st, pl_val) == 1 ? printf("Г€Г§Г¬ГҐГ­ГҐГ­ГЁГҐ ГўГ»ГЇГ®Г«Г­ГҐГ­Г® ГіГ±ГЇГҐГёГ­Г®!\n") : printf("Г‡Г­Г Г·ГҐГ­ГЁГҐ Г­ГҐ Г­Г Г©Г¤ГҐГ­Г®!\n")) : printf("ГЌГҐГўГҐГ°Г­Г»Г© ГўГўГ®Г¤!");
                 break;
             case 6:
                 file_write(array, size, file_name);
-                printf("Сохранено успешно!\n");
+                printf("Г‘Г®ГµГ°Г Г­ГҐГ­Г® ГіГ±ГЇГҐГёГ­Г®!\n");
                 break;
 
             case 7:
                 system("cls");
-                printf("Напишите номер нового игрока и имя:");
+                printf("ГЌГ ГЇГЁГёГЁГІГҐ Г­Г®Г¬ГҐГ° Г­Г®ГўГ®ГЈГ® ГЁГЈГ°Г®ГЄГ  ГЁ ГЁГ¬Гї:");
                 char pl_name[20] = { 0 }; pl_numb;
                 scanf("%d", &pl_numb);
                 fgets(pl_name, 20, stdin);
@@ -112,17 +112,17 @@ int main() {
                     array = (cyclist*)realloc(array, ++size * sizeof(cyclist));
                     add_el(array, size, pl_numb, pl_name);
                 }
-                else { printf("Ошибка!повторите операцию\n"); }
+                else { printf("ГЋГёГЁГЎГЄГ !ГЇГ®ГўГІГ®Г°ГЁГІГҐ Г®ГЇГҐГ°Г Г¶ГЁГѕ\n"); }
                 break;
             case 8:
                 system("cls");
                 arr_print_data(array, size, 0);
-                printf("Напишите номер игрока, которого требуется удалить:");
+                printf("ГЌГ ГЇГЁГёГЁГІГҐ Г­Г®Г¬ГҐГ° ГЁГЈГ°Г®ГЄГ , ГЄГ®ГІГ®Г°Г®ГЈГ® ГІГ°ГҐГЎГіГҐГІГ±Гї ГіГ¤Г Г«ГЁГІГј:");
                 scanf("%d", &pl_numb);
                 for (int i = 0; i < size; i++) {
                     if (array[i].number == pl_numb) {
-                        size > 0 && pl_numb > 0 ? del_el(array, size, pl_numb) : printf("Размер массива - 0, удалять нечего!\n");
-                        size > 0 && pl_numb > 0 ? array = (cyclist*)realloc(array, --size * sizeof(cyclist)) : printf("Ошибка!повторите операцию\n");
+                        size > 0 && pl_numb > 0 ? del_el(array, size, pl_numb) : printf("ГђГ Г§Г¬ГҐГ° Г¬Г Г±Г±ГЁГўГ  - 0, ГіГ¤Г Г«ГїГІГј Г­ГҐГ·ГҐГЈГ®!\n");
+                        size > 0 && pl_numb > 0 ? array = (cyclist*)realloc(array, --size * sizeof(cyclist)) : printf("ГЋГёГЁГЎГЄГ !ГЇГ®ГўГІГ®Г°ГЁГІГҐ Г®ГЇГҐГ°Г Г¶ГЁГѕ\n");
                     }
                 }
                 system("cls");
@@ -131,7 +131,7 @@ int main() {
         }
         else {
             system("cls");
-            printf("Ошибка! Повторите ввод!\n");
+            printf("ГЋГёГЁГЎГЄГ ! ГЏГ®ГўГІГ®Г°ГЁГІГҐ ГўГўГ®Г¤!\n");
         }
     };
     free(array);
@@ -143,7 +143,7 @@ int check_size(char fname[30])
 {
     FILE* S2 = fopen(fname, "rt");
     if (S2 == NULL) {
-        puts("Не удалось открыть файл");
+        puts("ГЌГҐ ГіГ¤Г Г«Г®Г±Гј Г®ГІГЄГ°Г»ГІГј ГґГ Г©Г«");
         exit(0);
     }
     int size;
@@ -163,7 +163,7 @@ int file_read(cyclist* array, char fname[30], int size)
     system("cls");
     FILE* S2 = fopen(fname, "rt");
     if (S2 == NULL) {
-        puts("Не удалось открыть файл");
+        puts("ГЌГҐ ГіГ¤Г Г«Г®Г±Гј Г®ГІГЄГ°Г»ГІГј ГґГ Г©Г«");
         exit(0);
     }
     int i = 0;
@@ -178,13 +178,13 @@ int file_read(cyclist* array, char fname[30], int size)
         i++;
     }
     fclose(S2);
-    printf("Успешно импортировано %d записей!\n", i);
+    printf("Г“Г±ГЇГҐГёГ­Г® ГЁГ¬ГЇГ®Г°ГІГЁГ°Г®ГўГ Г­Г® %d Г§Г ГЇГЁГ±ГҐГ©!\n", i);
     return i;
 }
 
 int file_write(cyclist* array, int size, char fname[30])
 {
-    //запись в файл
+    //Г§Г ГЇГЁГ±Гј Гў ГґГ Г©Г«
     system("cls");
     FILE* S1 = fopen(fname, "w");
     for (int i = 0; i < size; i++) {
@@ -196,16 +196,16 @@ int file_write(cyclist* array, int size, char fname[30])
 void arr_print_data(cyclist* a, int size, int mode)
 {
     if (mode == 0) {
-        printf("\nТаблица данных\n");
-        printf("|%2s|%20s|%5s|%5s|%5s|%5s|%5s|%5s|\n", "Номер", "Имя Фамилия", "Этап1", "Этап2", "Этап3", "Этап4", "Этап5", "Штрафные очки");
+        printf("\nГ’Г ГЎГ«ГЁГ¶Г  Г¤Г Г­Г­Г»Гµ\n");
+        printf("|%2s|%20s|%5s|%5s|%5s|%5s|%5s|%5s|\n", "ГЌГ®Г¬ГҐГ°", "Г€Г¬Гї Г”Г Г¬ГЁГ«ГЁГї", "ГќГІГ ГЇ1", "ГќГІГ ГЇ2", "ГќГІГ ГЇ3", "ГќГІГ ГЇ4", "ГќГІГ ГЇ5", "ГГІГ°Г ГґГ­Г»ГҐ Г®Г·ГЄГЁ");
         for (int i = 0; i < size; i++) {
             printf("|%5d|%20s|%5d|%5d|%5d|%5d|%5d|%13d|\n", a[i].number, a[i].name, a[i].stages[0], a[i].stages[1], a[i].stages[2], a[i].stages[3], a[i].stages[4], a[i].penalty);
         };
     }
 
     else {
-        printf("\nТаблица данных\n");
-        printf("|%2s|%20s|%5s|%5s|%5s|%5s|%5s|%7s|%5s|\n", "Номер", "Имя Фамилия", "Этап1", "Этап2", "Этап3", "Этап4", "Этап5", "Среднее", "Штрафные очки");
+        printf("\nГ’Г ГЎГ«ГЁГ¶Г  Г¤Г Г­Г­Г»Гµ\n");
+        printf("|%2s|%20s|%5s|%5s|%5s|%5s|%5s|%7s|%5s|\n", "ГЌГ®Г¬ГҐГ°", "Г€Г¬Гї Г”Г Г¬ГЁГ«ГЁГї", "ГќГІГ ГЇ1", "ГќГІГ ГЇ2", "ГќГІГ ГЇ3", "ГќГІГ ГЇ4", "ГќГІГ ГЇ5", "Г‘Г°ГҐГ¤Г­ГҐГҐ", "ГГІГ°Г ГґГ­Г»ГҐ Г®Г·ГЄГЁ");
         for (int i = 0; i < size; i++) {
             printf("|%5d|%20s|%5d|%5d|%5d|%5d|%5d|%7.1f|%13d|\n", a[i].number, a[i].name, a[i].stages[0], a[i].stages[1], a[i].stages[2], a[i].stages[3], a[i].stages[4], ((a[i].stages[0] + a[i].stages[1] + a[i].stages[2] + a[i].stages[3] + a[i].stages[4]) / 5.), a[i].penalty);
         };
@@ -215,15 +215,15 @@ void arr_print_data(cyclist* a, int size, int mode)
 void arr_print_results(cyclist* a, int size, int mode)
 {
     if (mode == 0) {
-        printf("\nТаблица результатов\n");
-        printf("|%20s|%5s|%5s|\n", "Имя Фамилия", "Общие очки", "Место");
+        printf("\nГ’Г ГЎГ«ГЁГ¶Г  Г°ГҐГ§ГіГ«ГјГІГ ГІГ®Гў\n");
+        printf("|%20s|%5s|%5s|\n", "Г€Г¬Гї Г”Г Г¬ГЁГ«ГЁГї", "ГЋГЎГ№ГЁГҐ Г®Г·ГЄГЁ", "ГЊГҐГ±ГІГ®");
         for (int i = 0; i < size; i++) {
             printf("|%20s|%10d|%5d|\n", a[i].name, a[i].total, a[i].place);
         };
     }
     else {
-        printf("\nТаблица данных\n");
-        printf("|%2s|%20s|%5s|\n", "Номер", "Имя Фамилия", "Штрафные очки");
+        printf("\nГ’Г ГЎГ«ГЁГ¶Г  Г¤Г Г­Г­Г»Гµ\n");
+        printf("|%2s|%20s|%5s|\n", "ГЌГ®Г¬ГҐГ°", "Г€Г¬Гї Г”Г Г¬ГЁГ«ГЁГї", "ГГІГ°Г ГґГ­Г»ГҐ Г®Г·ГЄГЁ");
         for (int i = 0; i < size; i++) {
             printf("|%5d|%20s|%13d|\n", a[i].number, a[i].name, a[i].penalty);
         }
@@ -282,7 +282,7 @@ int arr_change(cyclist* a, int size, int pl_numb, int pl_st, int pl_val)
 int add_el(cyclist* a, int size, int nmb, char nm[20]) {
     strncpy(a[size - 1].name, nm, 20);
     (a + (size - 1))->number = nmb;
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < size; i++) {
         a[size - 1].stages[i] = 0;
     }
     a[size - 1].penalty = 0;
