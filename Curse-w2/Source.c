@@ -300,6 +300,7 @@ int del_el(cyclist* a, int size, int nmb) {
     cyclist tmp; int k = 0;
     while (a[k].number != nmb)k++;
     el_swap(a, size - 1, k);
+    return 1;
 };
 
 int comp(cyclist* a, cyclist* b)
