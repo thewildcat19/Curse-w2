@@ -189,6 +189,7 @@ int file_write(cyclist* array, int size, char fname[30])
     for (int i = 0; i < size; i++) {
         fprintf(S1, "|%5d|%20s|%5d|%5d|%5d|%5d|%5d|%13d|\n", array[i].number, array[i].name, array[i].stages[0], array[i].stages[1], array[i].stages[2], array[i].stages[3], array[i].stages[4], array[i].penalty);
     };
+    return 1;
 
 }
 
